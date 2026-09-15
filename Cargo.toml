@@ -3,7 +3,15 @@ name = "rs-pq-arrow-schema"
 version = "0.1.0"
 edition = "2024"
 
+description = "Arrow schema inspection for Parquet files"
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-pq-arrow-schema"
+homepage = "https://github.com/takanoriyanagitani/rs-pq-arrow-schema"
+documentation = "https://docs.rs/rs-pq-arrow-schema/latest"
+keywords = ["arrow", "parquet", "schema", "inspection"]
+
 exclude = [
+  "sample.d/input.parquet",
 ]
 
 [lints.rust]
