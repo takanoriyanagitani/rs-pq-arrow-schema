@@ -1,0 +1,52 @@
+[package]
+name = "rs-pq-arrow-schema"
+version = "0.1.0"
+edition = "2024"
+
+exclude = [
+]
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+expect_used = "forbid"
+panic = "forbid"
+
+[[bin]]
+name = "pq-show-arrow-schema"
+
+[dependencies.serde_json]
+version = "1"
+default-features = false
+features = [
+  "std",
+]
+
+[dependencies.arrow-schema]
+version = "59.3.0"
+default-features = false
+features = [
+  "serde",
+]
+
+[dependencies.arrow-array]
+version = "59.3.0"
+default-features = false
+features = [
+]
+
+[dependencies.parquet]
+version = "59.3.0"
+default-features = false
+features = [
+  "arrow",
+  "base64",
+  "brotli",
+  "flate2-rust_backend",
+  "lz4",
+  "simdutf8",
+  "snap",
+  "zstd",
+]
